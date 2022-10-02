@@ -55,7 +55,22 @@ that renders the page as we make changes.
 Git can be a complicated tool! but using it consists of just a few basic steps. We can start by describing some basic concepts
 
 - `commit`
-- ``
+
+## Getting Started
+
+## After Making Changes
+
+- `git status` - see the status of what has been changed
+- `git add .` - Add all files in the current directory to the next commit, or "stage" the changes
+  - You don't have to use `.` and can instead specify specific files or directories if you don't want to commit all of your changes like `git add filename.md`
+- `git commit -m "commit description"` - Make a *commit* of your code, or create a checkpoint of the code at the particular point in time.
+- `git push` - send my commit to github
+
+You might run into a "merge conflict" here where the server has different commits than you do on your local version, eg. if you were editing in the web editor, committed, but then didn't pull those changes to the local copy before doing additional work. To get past this:
+
+- `git pull` to pull any changes from the server. 
+- If there are no conflicts that can't be automatically resolved, then you will be greeted with a horrifying `vim` prompt, to exit this (and complete the merge) type `:q` and then press `enter`.
+- `git push` again
     
 # Deploying
 
