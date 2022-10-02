@@ -19,4 +19,49 @@ that renders the page as we make changes.
   - typing `subl .` from the site directory in the Terminal
 - Now when you edit files in the site, you should see that reflected on the page served by the development server!
   - Usually served at [http://127.0.0.1:4000/test_site/](http://127.0.0.1:4000/test_site/)
+  
+# Project Organization
+
+(also see https://jekyllrb.com/docs/ )
+
+```mermaid
+  graph TD;
+    A[Markdown] -->|Jekyll| B(HTML)
+    C[SCSS] -->|Jekyll| D(CSS)
+    E[JS] -->|Copied| F(JS)
+```
+
+- Markdown serves as the source for the HTML that is produced
+  - Jekyll uses templates (specified in the "frontmatter" at the top of a markdown file) to build the page. These are stored in
+    - `_layouts`: full page page templates that can be specified with the `layout` parameter
+    - `_includes`: Smaller HTML fragments that can be reused (see [Includes Documentation](https://jekyllrb.com/docs/includes/))
+- CSS controls the appearance of the objects on the page
+  - Use [CSS Selectors](https://www.w3schools.com/cssref/css_selectors.asp) to specify *which* elements you are styling
+  - Use [CSS Rules](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) to apply a style
+  - For example:
+    ```css
+    // Select the "home" class
+    .home {
+      // change the color
+      color: red;
+    }
+    ```
+  - Jekyll uses an "enhanced" CSS syntax that makes some parts of writing CSS easier, unhelpfully there are two that you can use, determined  by the 
+    - SCSS: more like base CSS, easier to transition
+    - SASS: a little bit cleanear syntax, but harder to use online documentation that you might find.
+    
+# Basic git workflow
+
+
+    
+# Deploying
+
+Building the website and making it available online
+    
+# References
+
+- Using CSS: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics
+
+
+
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
