@@ -52,16 +52,30 @@ that renders the page as we make changes.
     
 # Basic git workflow
 
+Git can be a complicated tool! but using it consists of just a few basic steps. We can start by describing some basic concepts
 
+- `commit`
+- ``
     
 # Deploying
 
 Building the website and making it available online
+
+# Components of development environment
+
+- text editor
+- jekyll
+- git
+- github
+
+# Helpful terminal commands
+
+- `ctrl+c` - close running process
+- `up arrow` - get the last command that was issued
     
 # References
 
 - Using CSS: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics
-
-
+- Learning git visually: https://learngitbranching.js.org/
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
