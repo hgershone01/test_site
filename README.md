@@ -12,8 +12,8 @@ that renders the page as we make changes.
   - `bundle exec jekyll serve`
   - Optionally, you can add additional arguments to change the way the server works, to see those
     type `bundle exec jekyll serve --help`
-  - For example, to get the page to automatically reload once you make changes, you can use
-    `bundle exec jekyll serve --livereload`
+  - For example, to open your browser and get the page to automatically reload once you make changes, you can use
+    `bundle exec jekyll serve --livereload --open`
 - Open the site directory in your text editor! Either by 
   - opening Sublime Text and using the `File > Open` menu, or
   - typing `subl .` from the site directory in the Terminal
@@ -58,9 +58,18 @@ Git can be a complicated tool! but using it consists of just a few basic steps. 
 
 ## Getting Started
 
+- Open terminal
+- go to test_site directory with `cd`
+- `git pull` to pull in any changes from the remote version of the code that might have happened since last you worked on things
+- start dev server (described above)
+- Open text editor 
+  - from command line, use `Cmd + t` to open new tab, and then `subl .` to open the current directory in sublime text)
+  - Or open sublime text from `/Applications` and manually open with `File > Open`
+- Make changes to site
+
 ## After Making Changes
 
-- `git status` - see the status of what has been changed
+- `git status` - see the status of what has been changed, do this whenever you aren't sure what's going on with the repository to see what's been changed or staged for committing.
 - `git add .` - Add all files in the current directory to the next commit, or "stage" the changes
   - You don't have to use `.` and can instead specify specific files or directories if you don't want to commit all of your changes like `git add filename.md`
 - `git commit -m "commit description"` - Make a *commit* of your code, or create a checkpoint of the code at the particular point in time.
